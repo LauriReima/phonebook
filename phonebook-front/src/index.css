@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: rgb(71, 134, 134);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.form {
+  text-align: center;
+}
+.numberList {
+  display: block;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 0 0 10px 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+.poistoNappi {
+  margin: 0 0 0 45px;
+  color: rgb(36, 36, 27);
+  background-color: beige;
+  padding: 4px;
+  border-radius: 5%;
+}
+.poistoNappi:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+input {
+  width: 100%;
+  padding: 12px 13px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.subNappi {
+  width: 100%;
+  padding: 12px 13px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+}
+.subNappi:hover {
+  background-color: blueviolet;
+  color: rgb(122, 152, 190);
+}
+label {
+  font-size: 27px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
