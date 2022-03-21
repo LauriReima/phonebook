@@ -24,10 +24,13 @@ class App extends React.Component {
     const samaNimi = this.state.persons
       .map((p) => p.name)
       .includes(personObj.name);
+    const samaNumero = this.state.persons
+      .map((p) => p.number)
+      .includes(personObj.number);
 
     personObj.name === "" || personObj.number === ""
       ? alert("Täytä molemmat lokerot")
-      : !samaNimi
+      : !samaNimi && !samaNumero
       ? personService.create(personObj).then((persons) => {
           this.setState({
             persons: this.state.persons.concat(persons),
@@ -35,7 +38,7 @@ class App extends React.Component {
             newNumber: "",
           });
         })
-      : alert("Nimi löytyy jo listasta!!!");
+      : alert("Nimi tai numero löytyy jo listasta!!!");
   };
   deletePerson = (id) => {
     const nimi = this.state.persons.filter((p) => p.id === id)[0].name;
